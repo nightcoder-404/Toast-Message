@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Toast Message</title>
+</head>
+
+<body>
+
+    <button id="btn1">Submit</button>
+    <div class="show">
+        <button id="btn2">Submitted Successful</button>
+    </div>
+
+    <script>
+        const button = document.getElementById("btn1");
+        const msg = document.getElementById("btn2");
+
+        button.addEventListener('click', () => {
+            msg.classList.add('show');
+            setTimeout(() => {
+                msg.classList.remove('show');
+
+            }, 2000);
+        });
+    </script>
+</body>
+
+</html>
